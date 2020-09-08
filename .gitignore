@@ -1,0 +1,13 @@
+.vscode/
+
+development/config.php
+development/constants.php
+development/database.php
+
+local/config.php
+local/constants.php
+local/database.php
+
+production/config.php
+production/constants.php
+production/database.php
