@@ -1,5 +1,9 @@
 # siatk
 
+clone this projet into your local 
+- check out to develop branch to start code 
+
+
 the system will have 3 main purpose 
 1. production (live)
 2. development (live testing) [QA, developers etc]
@@ -32,3 +36,6 @@ setting database :
 
 		3. production 
 			- still on progress
+
+
+--> Happy Code :) <--
