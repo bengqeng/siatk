@@ -21,21 +21,14 @@ setting database :
 		1. Local purpose
 			- set database.php on config local 'database' => 'local_siatk' (local purpose) 
 				and create table on mysql with name {local_siatk}
-
 				or
-			
 			- change to your requirement :)
-			
 		2. development (staging)
 			(local)
 			- set database.php on config development 'database' => 'staging_siatk'	
 				(staging) it will be used when you acces {staging.localhost/siatk}
-
 			(live)
 			- still in progress
-
 		3. production 
 			- still on progress
-
-
---> Happy Code :) <--
+						--> Happy Code :) <--
