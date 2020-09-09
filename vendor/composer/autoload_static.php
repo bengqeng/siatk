@@ -27,12 +27,33 @@ class ComposerStaticInit8adcf2bd6c9ab4ff9f9407d717e651dd
         ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
             'Prophecy\\' => 9,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
+        'K' => 
+        array (
+            'Kenjis\\CodeIgniter_Cli\\_Config\\' => 31,
+            'Kenjis\\CodeIgniter_Cli\\' => 23,
         ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+        ),
+        'A' => 
+        array (
+            'Aura\\Project_Kernel\\_Config\\' => 28,
+            'Aura\\Project_Kernel\\' => 20,
+            'Aura\\Dispatcher\\' => 16,
+            'Aura\\Di\\' => 8,
+            'Aura\\Cli_Kernel\\_Config\\' => 24,
+            'Aura\\Cli_Kernel\\' => 16,
+            'Aura\\Cli\\_Config\\' => 17,
+            'Aura\\Cli\\' => 9,
         ),
     );
 
@@ -55,9 +76,25 @@ class ComposerStaticInit8adcf2bd6c9ab4ff9f9407d717e651dd
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Kenjis\\CodeIgniter_Cli\\_Config\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kenjis/codeigniter-cli/config',
+        ),
+        'Kenjis\\CodeIgniter_Cli\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kenjis/codeigniter-cli/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -66,6 +103,38 @@ class ComposerStaticInit8adcf2bd6c9ab4ff9f9407d717e651dd
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Aura\\Project_Kernel\\_Config\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/project-kernel/config',
+        ),
+        'Aura\\Project_Kernel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/project-kernel/src',
+        ),
+        'Aura\\Dispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/dispatcher/src',
+        ),
+        'Aura\\Di\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/di/src',
+        ),
+        'Aura\\Cli_Kernel\\_Config\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/cli-kernel/config',
+        ),
+        'Aura\\Cli_Kernel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/cli-kernel/src',
+        ),
+        'Aura\\Cli\\_Config\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/cli/config',
+        ),
+        'Aura\\Cli\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/cli/src',
         ),
     );
 
