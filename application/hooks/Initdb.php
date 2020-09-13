@@ -3,6 +3,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Initdb {  
 	public function test_db()  {
+    if (!file_exists(APPPATH.'config/'.ENVIRONMENT.'/database.php')) {
+      echo "Silahkan duplicate atau copy dan rename file </br>".APPPATH.'config/'.ENVIRONMENT.'\_database.php menjadi '
+            .
+            "<i style='color:red'>database.php</i>"
+            .
+            "</br><i style='color:red'>file _database.php</i> tidak perlu dihapus agar tidak mengganggu saat penggunaan git Terimakasih :)";
+      exit;
+     }  
+
 		include_once APPPATH.'config/'.ENVIRONMENT.'/database.php';
   	$con 		= new mysqli($db['default']['hostname'], $db['default']['username'], $db['default']['password']);
 
