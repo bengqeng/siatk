@@ -75,7 +75,11 @@ $query_builder = TRUE;
 
 if(strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
 
-	// Isikan disini jika anda menggunakan server Localhost guys	
+	/*
+	 * 
+	 * Jika ingin menggunakan Development di Localhost Mohon isi dibagian ini ya guys :) 
+	 * 
+	*/	
 
 	$db['default'] = array(
 		'dsn'	=> '',
