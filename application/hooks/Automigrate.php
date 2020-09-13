@@ -8,11 +8,21 @@ class Automigrate extends MY_Controller {
   }
 
   public function migrate_db_on_first_load() {
-    if (!$this->migration->current()) {
-        show_error($this->migration->error_string());
-    } else {
-        echo 'Migration worked!';
+    
+    if (count($this->migration->find_migrations()) == 0){
+      echo  "Table belum terbentuk di database anda" 
+            .
+            "</br>System belum melakukan migrasi karena tidak ditemukan file migrasi di folder ".APPPATH."migrations"
+            .
+            "</br>Pastikan file migrasi tersedia silahkan hubungi administator anda";
+      exit;
     }
+    
+    if (!$this->migration->latest()) {
+      show_error($this->migration->error_string());
+      exit;
+    }
+    
   }
 }  
 ?>  
