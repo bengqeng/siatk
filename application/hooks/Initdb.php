@@ -18,7 +18,7 @@ class Initdb {
   	if (empty($db['default']['database']) || empty($db['default']['hostname']) || empty($db['default']['username'])) {
   		echo "Anda berada di server <i>".$_SERVER['SERVER_NAME']."</i> dengan environmet : <i>".ENVIRONMENT."</i></br>";
   		echo "1. mohon isi konfigurasi database anda</br>";
-  		echo "2. Isikan di folder <i>".FCPATH."application\config".ENVIRONMENT."\database.php</i></br>";
+  		echo "2. Isikan di folder <i>".FCPATH."application\config/".ENVIRONMENT."\database.php</i></br>";
   		echo "</br><table border='1'>
   						<tr>
   							<td colspan='2' style='align: center'>Konfigurasi Database saat ini </td>
