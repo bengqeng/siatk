@@ -16,13 +16,13 @@ $hook['pre_system'] = array(
                     'class' => 'Initdb',  
                     'function' => 'test_db',  
                     'filename' => 'Initdb.php',  
-                    'filepath' => 'hooks/local'
+                    'filepath' => 'hooks'
                     );
 
 $hook['pre_controller'] = array(  
         'class' => 'Automigrate',  
         'function' => 'migrate_db_on_first_load',  
         'filename' => 'Automigrate.php',  
-        'filepath' => 'hooks/local',  
+        'filepath' => 'hooks',  
         );    
   
