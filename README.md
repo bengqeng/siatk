@@ -1,8 +1,6 @@
 # siatk
 
 #Clone this projet into your local 
-- check out to develop branch to start code 
-
 
 #System will have 3 main purpose 
 1. production (live)
