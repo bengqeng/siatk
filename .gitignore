@@ -2,4 +2,6 @@
 
 
 # ignore db
-local/database.php
+application/config/local/database.php
+application/config/development/database.php
+application/config/production/database.php
