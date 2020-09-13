@@ -1,7 +1,10 @@
 .vscode/
 
-*/config.php
-*/constants.php
-*/database.php
+# ignore db
+application/config/local/database.php
+application/config/development/database.php
+application/config/production/database.php
 
-tes
+# ignore vendor composer
+vendor/*
+
