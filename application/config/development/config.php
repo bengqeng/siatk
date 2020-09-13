@@ -23,7 +23,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://staging.localhost/siatk';
+if(strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
+  /*
+    digunakan untuk server lokal anda
+   */
+  $config['base_url'] = 'http://staging.localhost/siatk';
+} else {
+  /*
+    digunakan untuk server cload kalian :)
+   */
+  $config['base_url'] = 'http://staging.xxx/siatk';
+}
 
 /*
 |--------------------------------------------------------------------------
