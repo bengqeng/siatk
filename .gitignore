@@ -1,5 +1,5 @@
 .vscode/
 
-*/config.php
-*/constants.php
-*/database.php
+
+# ignore db
+local/database.php
