@@ -21,4 +21,7 @@
 go to application
 just acces your url on local or server :)
 it will give you the information how to set it :)
+
+dont forget to remove the '_' on _database.php for each config (development, local, production)
+
 --> Happy Code :) <--
