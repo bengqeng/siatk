@@ -1,6 +1,7 @@
 # siatk
 
 #Clone this projet into your local
+
   windows:
   - inside your root folder like (xampp, laragon)
 
