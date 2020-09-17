@@ -1,59 +1,21 @@
-<?php  
+<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Initdb {  
+class Initdb {
 	public function test_db()  {
     if (!file_exists(APPPATH.'config/'.ENVIRONMENT.'/database.php')) {
-      echo "Silahkan duplicate atau copy dan rename file </br>".APPPATH.'config/'.ENVIRONMENT.'\_database.php menjadi '
-            .
-            "<i style='color:red'>database.php</i>"
-            .
-            "</br><i style='color:red'>file _database.php</i> tidak perlu dihapus agar tidak mengganggu saat penggunaan git Terimakasih :)";
+      include_once (APPPATH.'views/errors/setup/copy_database.php');
       exit;
-     }  
+     }
 
 		include_once APPPATH.'config/'.ENVIRONMENT.'/database.php';
-  	$con 		= new mysqli($db['default']['hostname'], $db['default']['username'], $db['default']['password']);
-
   	if (empty($db['default']['database']) || empty($db['default']['hostname']) || empty($db['default']['username'])) {
-  		echo "Anda berada di server <i>".$_SERVER['SERVER_NAME']."</i> dengan environmet : <i>".ENVIRONMENT."</i></br>";
-  		echo "1. mohon isi konfigurasi database anda</br>";
-  		echo "2. Isikan di folder <i>".FCPATH."application\config/".ENVIRONMENT."\database.php</i></br>";
-  		echo "</br><table border='1'>
-  						<tr>
-  							<td colspan='2' style='align: center'>Konfigurasi Database saat ini </td>
-  							<td>status</td>
-  						</tr>
-  						<tr>
-  							<td>Hostname</td>
-  							<td>: ".$db['default']['hostname']."</td>
-  							<td>required</td>
-  						</tr>
-  						<tr>
-  							<td>Username</td>
-  							<td>: ".$db['default']['username']."</td>
-  							<td>required</td>
-  						</tr>
-  						<tr>
-  							<td>Password</td>
-  							<td>: ".$db['default']['password']."</td>
-  							<td>optional for localhost</td>
-  						</tr>
-  						<tr>
-  							<td>Database name</td>
-  							<td>: ".$db['default']['database']."</td>
-  							<td>required</td>
-  						</tr>
-  					</table>";
-  		echo "<br/><b style='font-size: 20;'>Just Make Sure your connection to server <i style='color:red'>no need create the database on mysql</i></b> :)";
-
-  		if (!empty($db['default']['database'])) {
-  			echo "</br>note*: Anda akan menggunakan database : <i style='font-size:25px; color:red'>".$db['default']['database']."</i>".
-  						"</br>jika anda yakin menggunakan database tersebut anda tidak perlu merubah nama database";
-  		}
+      include_once (APPPATH.'views/errors/setup/set_connection.php');
   		exit;
-  	} 
+  	}
   	else {
+      $con    = new mysqli($db['default']['hostname'], $db['default']['username'], $db['default']['password']);
+
   		$hasil 	= $this->find_db($con, $db['default']['database']);
 	  	if ($hasil[0] == 0) {
 	  		$create_db = $this->generate_query_create_db($db['default']['database']);
@@ -66,7 +28,7 @@ class Initdb {
 				  echo "Error creating database: " . $conn->error;
 				  exit;
 				}
-	  	} 
+	  	}
   	}
   }
 
@@ -81,6 +43,4 @@ class Initdb {
   	$query = "CREATE DATABASE ".$db_name;
   	return $query;
   }
-
-}  
-?>  
+}
