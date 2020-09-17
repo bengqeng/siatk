@@ -48,6 +48,7 @@
 <body>
   <header>
     <div id="error">Error Database </br><span>setup 404<span></div>
+      <u style="color:white; font-size: 16px"><?php echo $_SERVER["SERVER_NAME"]; ?></u>
   </header>
   <div id="body-messages">
     <div id="messages">
