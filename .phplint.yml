@@ -1,0 +1,7 @@
+path: ./
+jobs: 10
+cache: no-cache
+extensions:
+  - php
+exclude:
+  - vendor

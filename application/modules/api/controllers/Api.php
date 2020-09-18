@@ -2,9 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 require APPPATH . '/libraries/REST_Controller.php';
 
-/**
-	 * summary
-	 */
 	class Api extends  \Restserver\Libraries\REST_Controller
 	{
     /**
@@ -15,7 +12,8 @@ require APPPATH . '/libraries/REST_Controller.php';
         parent::__construct();
     }
 
-    public function index_get(){
+    public function index_get()
+    {
     	$name = [
     	    'data ' => '1'
     	];
@@ -23,5 +21,5 @@ require APPPATH . '/libraries/REST_Controller.php';
     	$this->response($name, 200);
     }
 
-	}	
-?>
+	}
+

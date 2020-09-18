@@ -7,4 +7,3 @@ application/config/production/database.php
 
 # ignore vendor composer
 vendor/*
-

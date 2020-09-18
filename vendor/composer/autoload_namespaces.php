@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'org\\bovigo\\vfs' => array($vendorDir . '/mikey179/vfsstream/src/main/php'),
+    'N98\\JUnitXml' => array($vendorDir . '/n98/junit-xml/src'),
 );
