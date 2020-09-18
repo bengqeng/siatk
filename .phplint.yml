@@ -5,3 +5,42 @@ extensions:
   - php
 exclude:
   - vendor
+rules:
+  syntax: "error"
+  no-exit: "error"
+  no-eval: "error"
+  no-array-constructor: "error"
+  camelcase: [ "error", "never", { "ignore": [ "Datas", "classMap", "className" ] } ]
+  no-whitespace-before-property: "error"
+  no-lonely-if: "error"
+  switch-colon-spacing: "error"
+  space-infix-ops: "error"
+  space-unary-ops: "error"
+  space-in-parens: [ "error", "never" ]
+  eqeqeq: "error"
+  curly: [ "error", "multi" ]
+  quotes: [ "error", "single", { "avoidEscape": true, "allowTemplateLiterals": true } ]
+  array-bracket-spacing: [ "error", "never" ]
+  comma-spacing: [ "error", { "before": false, "after": true } ]
+  keyword-spacing: [ "error", { "before": true, "after": true } ]
+  space-before-function-paren: [ "error", "never" ]
+  space-before-blocks: [ "error", "always" ]
+  no-multi-spaces: "error"
+  func-call-spacing: [ "error", "never" ]
+  func-colon-spacing: [ "error", { "before": false, "after": true } ]
+  spaced-comment: [ "error", "always", { "exceptions": "-+*" } ]
+  function-brace-newline: [ "error", { "anonymous": false, "named": true } ]
+  no-multiple-empty-lines: [ "error", { max: 2 } ]
+  no-extra-semi: "error"
+  no-empty: [ "error", { "allowEmptyCatch": true } ]
+  array-element-newline: [ "error", { "multiline": true } ]
+  no-print_r: "error"
+  semi-spacing: [ "error", { "before": false, "after": true } ]
+  control-colon-spacing: [ "error", { "before": false, "after": true } ]
+  no-mixed-spaces-and-tabs: "error"
+  no-trailing-spaces: "error"
+  no-magic-numbers: [ "error", { "ignore": [0, 1, 200, 1000], "ignoreArrayIndexes": true, "enforceConst": true, detectObjects: false } ]
+  indent: ["error", 4, { "SwitchCase": 1, "FunctionDeclaration": { "parameters": 2 }, 'Condition': 2 }]
+  max-len: ["error", { "code": 120, "tabWidth": 4 }]
+  eol-last: ["error", "always"]
+  html: ["error", { "eatNewLine": false, "styleIndent": 2 }]
