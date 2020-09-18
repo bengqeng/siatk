@@ -18,7 +18,7 @@ require APPPATH . '/libraries/REST_Controller.php';
     	    'data ' => '1',
             'name' => "Adrian"
     	];
-
+asdasd
     	$this->response($name, 200);
     }
 
