@@ -29,6 +29,9 @@ just acces your url on local or server :)
 it will give you the information how to set it :)
 
 
+#when you update file dont forget to run this on your cli for phpcs
+vendor/bin/phplint --no-cache
+
+
 
 --> Happy Code :) <--
-tes
