@@ -15,7 +15,8 @@ require APPPATH . '/libraries/REST_Controller.php';
     public function index_get()
     {
     	$name = [
-    	    'data ' => '1'
+    	    'data ' => '1',
+            'name' => "Adrian"
     	];
 
     	$this->response($name, 200);
