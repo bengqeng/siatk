@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a55026bd60ef3137097b7e59680b382e",
+    "content-hash": "b56e04b26914790731935455438bb0e5",
     "packages": [
         {
             "name": "n98/junit-xml",
@@ -107,6 +107,42 @@
                 "syntax"
             ],
             "time": "2020-04-23T02:04:34+00:00"
+        },
+        {
+            "name": "phplucidframe/bare-migration",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cithukyaw/bare-migration.git",
+                "reference": "dabac34ef84fd4a65808b83dcee4e4c19884e68a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cithukyaw/bare-migration/zipball/dabac34ef84fd4a65808b83dcee4e4c19884e68a",
+                "reference": "dabac34ef84fd4a65808b83dcee4e4c19884e68a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sithu K.",
+                    "email": "cithukyaw@gmail.com",
+                    "homepage": "http://www.phplucidframe.com/sithu"
+                }
+            ],
+            "description": "A simple PHP command line tool to generate CodeIgniter bare migration file.",
+            "keywords": [
+                "console",
+                "generator"
+            ],
+            "time": "2016-11-04T15:14:42+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -637,5 +673,6 @@
     "platform": {
         "php": ">=5.2.4"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
