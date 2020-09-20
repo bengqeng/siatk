@@ -8,7 +8,6 @@ class Automigrate extends MY_Controller {
   }
 
   public function migrate_db_on_first_load() {
-    
     if (count($this->migration->find_migrations()) == 0){
       echo  "Table belum terbentuk di database anda" 
             .

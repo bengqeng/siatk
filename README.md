@@ -35,4 +35,10 @@ go to application
 just acces your url on local or server :)
 it will give you the information how to set it :)
 
---> Happy Code :) <--
+Migration file
+run this on your cmd or cli:
+  - php vendor/phplucidframe/bare-migration/ci migration:bare add_new_post_table
+
+---> run compuser update on your root first <---
+
+                Happy Code :) 

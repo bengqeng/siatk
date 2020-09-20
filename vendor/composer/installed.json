@@ -106,6 +106,44 @@
         ]
     },
     {
+        "name": "phplucidframe/bare-migration",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cithukyaw/bare-migration.git",
+            "reference": "dabac34ef84fd4a65808b83dcee4e4c19884e68a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cithukyaw/bare-migration/zipball/dabac34ef84fd4a65808b83dcee4e4c19884e68a",
+            "reference": "dabac34ef84fd4a65808b83dcee4e4c19884e68a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "time": "2016-11-04T15:14:42+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Sithu K.",
+                "email": "cithukyaw@gmail.com",
+                "homepage": "http://www.phplucidframe.com/sithu"
+            }
+        ],
+        "description": "A simple PHP command line tool to generate CodeIgniter bare migration file.",
+        "keywords": [
+            "console",
+            "generator"
+        ]
+    },
+    {
         "name": "phpmailer/phpmailer",
         "version": "v6.1.7",
         "version_normalized": "6.1.7.0",
