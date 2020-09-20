@@ -6,7 +6,8 @@
 	"license": "MIT",
 	"require": {
 		"php": ">=5.2.4",
-		"overtrue/phplint": "^2.0"
+		"overtrue/phplint": "^2.0",
+		"phpmailer/phpmailer": "^6.1"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
