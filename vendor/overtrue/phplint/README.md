@@ -12,8 +12,16 @@
 
 ## Installation
 
+### Locally, if you have PHP
+
 ```shell
 $ composer require overtrue/phplint --dev -vvv
+```
+
+### Locally, if you only have Docker
+
+```
+docker pull overtrue/phplint:latest
 ```
 
 ## Usage
@@ -30,7 +38,7 @@ Arguments:
 Options:
       --exclude=EXCLUDE              Path to file or directory to exclude from linting (multiple values allowed)
       --extensions=EXTENSIONS        Check only files with selected extensions (default: php)
-  -j, --jobs=JOBS                    Number of parraled jobs to run (default: 5)
+  -j, --jobs=JOBS                    Number of parallel jobs to run (default: 5)
   -c, --configuration=CONFIGURATION  Read configuration from config file (default: ./.phplint.yml).
       --no-configuration             Ignore default configuration file (default: ./.phplint.yml).
       --no-cache                     Ignore cached data.
@@ -110,6 +118,13 @@ uses: overtrue/phplint@master
 with:
   path: .
   options: --exclude=*.log
+```
+
+### Other CI/CD (f.e. Bitbucket Pipelines, GitLab CI)
+
+Run this command using `overtrue/phplint:latest` Docker image:
+```
+/root/.composer/vendor/bin/phplint ./ --exclude=vendor
 ```
 
 ## PHP 扩展包开发
