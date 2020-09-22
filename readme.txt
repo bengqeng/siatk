@@ -28,17 +28,10 @@
     you can acces this staging on localhost with url (staging.localhost/siatk)
 - {domain}/siatk {live production}
 
-#how to use:
- - setting database :
-
-go to application
+acces with your browser :
 just acces your url on local or server :)
 it will give you the information how to set it :)
 
-Migration file
-run this on your cmd or cli:
-  - php vendor/phplucidframe/bare-migration/ci migration:bare add_new_post_table
-
 ---> run compuser update on your root first <---
 
-                Happy Code :) 
+                Happy Code :)
