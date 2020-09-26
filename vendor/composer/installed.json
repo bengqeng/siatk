@@ -205,7 +205,13 @@
                 "name": "Brent R. Matzelle"
             }
         ],
-        "description": "PHPMailer is a full-featured email creation and transfer class for PHP"
+        "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+        "funding": [
+            {
+                "url": "https://github.com/synchro",
+                "type": "github"
+            }
+        ]
     },
     {
         "name": "psr/log",
