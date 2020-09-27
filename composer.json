@@ -13,9 +13,8 @@
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
 	},
-	"require-dev": {
-	},
-  "scripts": {
-    	"test": "vendor/bin/phplint --no-cache"
-  }
+	"require-dev": {},
+	"scripts": {
+		"test": "vendor/bin/phplint --no-cache"
+	}
 }
