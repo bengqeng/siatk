@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-use Cocur\Slugify\Slugify;
 
 class Home extends MY_Controller {
 
@@ -21,22 +20,9 @@ class Home extends MY_Controller {
 	 */
 	public function __construct()
 	{
-		// $config = array(
-		// 	'field' => 'slug',
-		// 	'table' => 'user',
-		// 	'id' => 'id',
-		// );
-		// $this->slug->set_config($config);
 	}
 	public function index()
 	{
-		// $this->load->view('home_main');
-		// $data = array(
-		// 	'title' => 'aku lo',
-		// );
-		
-		echo	gslug('user', 'aku lo', 'slug');
-		// $data['uri'] = $this->slug->create_uri($data);
-		
+		$this->load->view('home_main');
 	}
 }
