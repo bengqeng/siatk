@@ -18,6 +18,9 @@ class Home extends MY_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct()
+	{
+	}
 	public function index()
 	{
 		$this->load->view('home_main');
