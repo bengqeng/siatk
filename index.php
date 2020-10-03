@@ -53,16 +53,23 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	$local_servers = array('localhost');
-	$staging = "staging";
-	$isLocal = in_array($_SERVER['SERVER_NAME'], $local_servers);
+// print_r($_SERVER);exit;
+	$init = ["staging", "localhost"];
+	$server_host = explode(".", $_SERVER['HTTP_HOST']);
 
-	if ($isLocal) {
-	    $env = 'local';
-	} 
-
-	if(strpos($_SERVER['SERVER_NAME'], $staging) !== false){
-    	$env = 'development';
+	if($server_host[0] == "localhost" || $server_host[0] == "staging"){
+		if($server_host[1] == "localhost"){
+			define('FOR_LOCAL', true);
+			$env = 'development';
+		}
+		else{
+			define('FOR_LOCAL', false);
+			$env = 'development';
+		}
+	}
+	else{
+		define('FOR_LOCAL', false);
+		$env = 'production';
 	}
 	// else {
 	//     // check development word in url
@@ -84,11 +91,6 @@
 switch (ENVIRONMENT)
 {
 	case 'development':
-		error_reporting(-1);
-		ini_set('display_errors', 1);
-	break;
-
-	case 'local':
 		error_reporting(-1);
 		ini_set('display_errors', 1);
 	break;
