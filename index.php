@@ -57,7 +57,10 @@
 	$init = ["staging", "localhost"];
 	$server_host = explode(".", $_SERVER['HTTP_HOST']);
 
-	if($server_host[0] == "localhost" || $server_host[0] == "staging"){
+	if($server_host[0] === "localhost"){
+			$env = 'development';
+	}
+	elseif($server_host[0] === "staging"){
 		if($server_host[1] == "localhost"){
 			define('FOR_LOCAL', true);
 			$env = 'development';
@@ -68,7 +71,6 @@
 		}
 	}
 	else{
-		define('FOR_LOCAL', false);
 		$env = 'production';
 	}
 	// else {

@@ -23,6 +23,10 @@ class Home extends MY_Controller {
 	}
 	public function index()
 	{
+		print_r(error_reporting());
+
+		$a= 0;
+		// print_r(show_404());
 		$this->load->view('home_main');
 	}
 }
