@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-	require_once APPPATH."plugin/slug/slug.php";
-	
+	require_once APPPATH."plugin/slug/Slug.php";
+
 	class Myslug extends Slug{
 		function __construct()
 		{
@@ -28,5 +28,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			return $config;
 		}
-		
+
 	}
