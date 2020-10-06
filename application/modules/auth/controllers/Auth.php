@@ -13,20 +13,11 @@ class Auth extends MY_Controller
 
   public function login()
   {
-  	$this->load->library('form_validation');
-  	$this->load->helper('security');
+		$username = "adrian";
+		$password = "12345";
 
-  	$this->form_validation->set_rules('username', 'Username', 'required');
-		$this->form_validation->set_rules('password', 'Password', 'required');
+		if $
 
-  	if ($this->form_validation->run() == FALSE)
-		{
-			echo "anda salah";
-   }
-		else
-		{
-			echo "benar dong";
-		}
   }
 }
 /** End of file Auth.php */
